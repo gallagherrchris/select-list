@@ -1,0 +1,34 @@
+.table--row {
+    cursor: pointer;
+}
+
+.table--row td {
+    border-top: 1px solid var(--border-color);
+}
+
+.table--row-selected {
+    background: #CCC;
+}
+
+.table--row-hover {
+    background: #DDD;
+}
+
+.table--row-hover.table--row-selected {
+    background: #DDD;
+}
+
+.table--status-available {
+    text-align: right;
+    padding: 0 1em 0 0;
+}
+
+.table--status-available::after {
+    content: ' ';
+    background: #2C2;
+    border-radius: 50%;
+    width: var(--status-circle-size);
+    height: var(--status-circle-size);
+    display: inline-block;
+    margin-bottom: -1px;
+}
